@@ -1,0 +1,19 @@
+h3:hover {
+    color: green;
+    background-color: yellow;
+}
+
+input:focus {
+    background-color: yellow;
+    outline: 0;
+    border: 1px solid blue;
+
+}
+
+a:visited{
+    color: purple;
+}
+
+li:nth-child(2n-1){
+    color: purple;
+}
