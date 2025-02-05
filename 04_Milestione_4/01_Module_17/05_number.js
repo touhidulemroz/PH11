@@ -14,3 +14,6 @@ var second = 0.2;
 var total = first + second;
 console.log(total.toFixed(2));
 console.log(parseFloat(total.toFixed(2)));
+
+const number = 10/0;
+console.log(number);
