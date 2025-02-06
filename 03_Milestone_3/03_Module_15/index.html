@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daisy UI</title>
+
+    <!-- daisy UI and tailwind  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+<body>
+    <h1>Hi there ! I am using daisy UI</h1>
+    <button class="btn btn-primary">Click Me</button>
+
+    <br>
+    <!-- modal  -->
+
+    <!-- Open the modal using ID.showModal() method -->
+    <button class="btn" onclick="my_modal_5.showModal()">open modal</button>
+    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+            <h3 class="text-lg font-bold">Hello!</h3>
+            <p class="py-4">Press ESC key or click the button below to close</p>
+            <div class="modal-action">
+                <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
+    <br>
+    <label class="swap swap-flip text-9xl">
+        <!-- this hidden checkbox controls the state -->
+        <input type="checkbox" />
+      
+        <div class="swap-on">😈</div>
+        <div class="swap-off">😇</div>
+      </label>
+<br>
+
+      <input type="checkbox" value="synthwave" class="toggle theme-controller" />
+
+      <br>
+      <div class="card bg-base-100 w-96 shadow-xl">
+        <figure class="px-10 pt-10">
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+            alt="Shoes"
+            class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Shoes!</h2>
+          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="card-actions">
+            <button class="btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="overflow-x-auto">
+            <table class="table">
+              <!-- head -->
+              <thead>
+                <tr>
+                  <th>
+                    <label>
+                      <input type="checkbox" class="checkbox" />
+                    </label>
+                  </th>
+                  <th>Name</th>
+                  <th>Job</th>
+                  <th>Favorite Color</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- row 1 -->
+                <tr>
+                  <th>
+                    <label>
+                      <input type="checkbox" class="checkbox" />
+                    </label>
+                  </th>
+                  <td>
+                    <div class="flex items-center gap-3">
+                      <div class="avatar">
+                        <div class="mask mask-squircle h-12 w-12">
+                          <img
+                            src="https://img.daisyui.com/images/profile/demo/2@94.webp"
+                            alt="Avatar Tailwind CSS Component" />
+                        </div>
+                      </div>
+                      <div>
+                        <div class="font-bold">Hart Hagerty</div>
+                        <div class="text-sm opacity-50">United States</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    Zemlak, Daniel and Leannon
+                    <br />
+                    <span class="badge badge-ghost badge-sm">Desktop Support Technician</span>
+                  </td>
+                  <td>Purple</td>
+                  <th>
+                    <button class="btn btn-ghost btn-xs">details</button>
+                  </th>
+                </tr>
+                <!-- row 2 -->
+                <tr>
+                  <th>
+                    <label>
+                      <input type="checkbox" class="checkbox" />
+                    </label>
+                  </th>
+                  <td>
+                    <div class="flex items-center gap-3">
+                      <div class="avatar">
+                        <div class="mask mask-squircle h-12 w-12">
+                          <img
+                            src="https://img.daisyui.com/images/profile/demo/3@94.webp"
+                            alt="Avatar Tailwind CSS Component" />
+                        </div>
+                      </div>
+                      <div>
+                        <div class="font-bold">Brice Swyre</div>
+                        <div class="text-sm opacity-50">China</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    Carroll Group
+                    <br />
+                    <span class="badge badge-ghost badge-sm">Tax Accountant</span>
+                  </td>
+                  <td>Red</td>
+                  <th>
+                    <button class="btn btn-ghost btn-xs">details</button>
+                  </th>
+                </tr>
+                <!-- row 3 -->
+                <tr>
+                  <th>
+                    <label>
+                      <input type="checkbox" class="checkbox" />
+                    </label>
+                  </th>
+                  <td>
+                    <div class="flex items-center gap-3">
+                      <div class="avatar">
+                        <div class="mask mask-squircle h-12 w-12">
+                          <img
+                            src="https://img.daisyui.com/images/profile/demo/4@94.webp"
+                            alt="Avatar Tailwind CSS Component" />
+                        </div>
+                      </div>
+                      <div>
+                        <div class="font-bold">Marjy Ferencz</div>
+                        <div class="text-sm opacity-50">Russia</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    Rowe-Schoen
+                    <br />
+                    <span class="badge badge-ghost badge-sm">Office Assistant I</span>
+                  </td>
+                  <td>Crimson</td>
+                  <th>
+                    <button class="btn btn-ghost btn-xs">details</button>
+                  </th>
+                </tr>
+                <!-- row 4 -->
+                <tr>
+                  <th>
+                    <label>
+                      <input type="checkbox" class="checkbox" />
+                    </label>
+                  </th>
+                  <td>
+                    <div class="flex items-center gap-3">
+                      <div class="avatar">
+                        <div class="mask mask-squircle h-12 w-12">
+                          <img
+                            src="https://img.daisyui.com/images/profile/demo/5@94.webp"
+                            alt="Avatar Tailwind CSS Component" />
+                        </div>
+                      </div>
+                      <div>
+                        <div class="font-bold">Yancy Tear</div>
+                        <div class="text-sm opacity-50">Brazil</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    Wyman-Ledner
+                    <br />
+                    <span class="badge badge-ghost badge-sm">Community Outreach Specialist</span>
+                  </td>
+                  <td>Indigo</td>
+                  <th>
+                    <button class="btn btn-ghost btn-xs">details</button>
+                  </th>
+                </tr>
+              </tbody>
+              <!-- foot -->
+              <tfoot>
+                <tr>
+                  <th></th>
+                  <th>Name</th>
+                  <th>Job</th>
+                  <th>Favorite Color</th>
+                  <th></th>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+      </div>
+</body>
+
+</html>

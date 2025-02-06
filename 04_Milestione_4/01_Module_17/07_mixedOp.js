@@ -8,4 +8,3 @@ console.log('40'+2);
 console.log(40 - '2');
 console.log('40'-2);
 
-
