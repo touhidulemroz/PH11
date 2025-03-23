@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Box</title>
+    <style>
+        .comment{
+            border: 2px solid blue;
+            background: lightblue;
+            padding: 10px;
+            /* margin: 10px; */
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Awesome Comment Box</h1>
+    <h2>Write what in your mind!!!</h2>
+    <section>
+        <h3>All Comments here</h3>
+        <div id="comments-container">
+            <p class="comment">Nice Post. Thanks!</p>
+            <p class="comment">Thanks For Posting</p>
+            <p class="comment">Waiting for the next video. Tysm.</p>
+        </div>
+        <!-- <form> -->
+            <textarea  id="comment-text-box" cols="100" rows="3" placeholder="Write Your Comment Here"></textarea>
+            <br>
+            <button id="btn-post-comment">Post Comment</button>
+        <!-- </form> -->
+    </section>
+    <script src="js/comment.js"></script>
+    <script>
+        //set event handler to the button
+        document.getElementById('btn-post-comment').addEventListener('click', function(){
+            //get the comment
+            const commentTextBox = document.getElementById('comment-text-box');
+            const newComment = commentTextBox.value;
+
+            // get the parent node where to publish the comment
+
+            const commentsContainer = document.getElementById('comments-container');
+
+            // create a comment paragraph and set the text
+
+            const commentElement = document.createElement('p');
+            commentElement.classList.add('comment');
+            commentElement.innerText = newComment;
+
+            //append the new p tag to the parent node
+
+            commentsContainer.appendChild(commentElement);
+
+            // clear the input field
+
+            commentTextBox.value = '';
+
+        })
+    </script>
+</body>
+</html>
