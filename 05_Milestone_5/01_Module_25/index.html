@@ -1,29 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Tour of DOM</title>
     <link rel="stylesheet" href="styles/styles.css">
     <style>
-        li{
+        .fruits-container li {
             color: yellowgreen;
+        }
+        #fruits-title{
+            color: black;
+        }
+        .important-places{
+            color: royalblue;
         }
     </style>
 
 </head>
+
 <body>
     <header>
         <h1>Welcome to my DOM </h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolore ab maxime fuga vel illum, dolorum libero
+            recusandae itaque, quaerat ut accusamus illo facere, enim magni commodi placeat amet culpa?
+        </p>
     </header>
-    <main>
-        <h1>My awesome DOM de Baba</h1>
-        <ul>
-            <li>Jalai Set</li>
-            <li>Safayet</li>
-            <li>Bonobash</li>
-        </ul>
+    <main id="main-content">
+        <section>
+            <h1>My awesome DOM de Baba</h1>
+            <ul>
+                <li>Jalai Set</li>
+                <li>Safayet</li>
+                <li>Bonobash</li>
+                <li>Bismillah</li>
+                <li>Rahmaninr</li>
+            </ul>
+        </section>
+        <section class="fruits-container">
+            <h1 id="fruits-title" class="some-class random-class every-class">Fruits i like</h1>
+            <ul>
+                <li>Mango</li>
+                <li>Apple</li>
+                <li>Orange</li>
+                <li>Watermelon</li>
+                <li>Guava</li>
+            </ul>
+        </section>
+        <section id="places-container" class="large-text">
+            <h1 id="places-title">Places i like to visit</h1>
+            <ul id="places-list">
+                <li class="important-places">London</li>
+                <li class="important-places">Paris</li>
+                <li class="important-places">Maldives</li>
+                <li class="important-places">Malta</li>
+                <li class="important-places">Malaysia</li>
+            </ul>
+        </section>
     </main>
     <!-- adding script using script src -->
     <!-- we will use this method more often -->
@@ -32,7 +68,45 @@
     </script>
     <!-- adding script using script tag -->
     <script>
+        // const student = {
+        //     name: 'Jalai Set',
+        //     ID: 11,
+        //     study: function (time) {
+        //         console.log(time, 'study korteche');
+        //     }
+        // }
+        // console.log('adding script using script tag');
+        // console.log(document.getElementsByTagName('li'));
+
+        // const liCollection = document.getElementsByTagName('li');
+        // for (const li of liCollection) {
+        //     console.log(li.innerText);
+        // }
+        // const allHeading = document.getElementsByTagName('h1');
+        // for (const heading of allHeading) {
+        //     console.log(heading.innerText);
+        // }
+
+        // const places = document.getElementsByClassName('important-places');
+        // for (const place of places) {
+        //     console.log(place.innerText);
+        // }
+
+        // const fruitsTitle = document.getElementById('fruits-title');
+        // fruitsTitle.innerText = 'Fruits i like to eat';
+
+        // const someLi = document.querySelectorAll('li');
+        // for (const li of someLi) {
+        //     console.log(li.innerText);
+        // }
+
+        // const someLi = document.querySelector('.fruits-container li' );
+        // console.log(someLi);
+
 
     </script>
+
+<script src="scripts/append.js"></script>
+    <script src="scripts/styleinjs.js"></script>
 </body>
 </html>
